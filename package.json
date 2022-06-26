@@ -1,0 +1,39 @@
+{
+  "name": "mern-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nodemon backend/server.js",
+  "engines": {
+    "node": "16.13.1",
+    "npm": "8.5.2"
+  },
+  "scripts": {
+    "start": "node backend/server",
+    "data:import": "node backend/data/seeder",
+    "data:destroy": "node backend/data/seeder -d",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "bcryptjs": "^2.4.3",
+    "braintree": "^3.10.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "http-errors": "^2.0.0",
+    "js-cookie": "^3.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mongoose": "^6.2.6",
+    "nodemon": "^2.0.15",
+    "react-bootstrap": "^2.2.1",
+    "react-router-dom": "^6.2.2",
+    "react-stripe-checkout": "^2.6.3",
+    "react-toastify": "^8.2.0",
+    "stripe": "^8.209.0",
+    "uuid": "^8.3.2"
+  }
+}
